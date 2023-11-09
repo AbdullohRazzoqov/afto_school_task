@@ -3,7 +3,10 @@ part of 'login_bloc.dart';
 class LoginState extends Equatable {
   bool isRegister;
   StateStatus stateStatus = StateStatus.normal;
-  LoginState({this.stateStatus = StateStatus.normal, this.isRegister = true});
+  LoginState({
+    this.stateStatus = StateStatus.normal,
+    this.isRegister = true,
+  });
   LoginState copyWith({
     StateStatus? stateStatus,
     bool? isRegister,

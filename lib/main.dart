@@ -1,6 +1,8 @@
 import 'package:afto_school_task/core/utils/app_colors.dart';
 import 'package:afto_school_task/screen/login/bloc/bloc/login_bloc.dart';
 import 'package:afto_school_task/screen/login/login_screen.dart';
+import 'package:afto_school_task/screen/test/bloc/bloc/test_bloc.dart';
+import 'package:afto_school_task/screen/test/test_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,7 +21,11 @@ class MyApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         child: MultiBlocProvider(
-          providers: [BlocProvider(create: (context) => LoginBloc())],
+          providers: [
+            BlocProvider(
+              create: (context) => LoginBloc(),
+        ), BlocProvider(create: (context)=> TestBloc())
+          ],
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Todo task',
@@ -29,7 +35,7 @@ class MyApp extends StatelessWidget {
               ),
               useMaterial3: true,
             ),
-            home: const LoginScreen(),
+            home: const TestScreen(),
           ),
         ));
   }

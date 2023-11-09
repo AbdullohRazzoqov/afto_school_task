@@ -8,6 +8,9 @@ class AppIcons {
   static const String personIcon = "assets/svg/person.svg";
   static const String seeOnIcon = "assets/svg/see on.svg";
   static const String seeOffIcon = "assets/svg/see off.svg";
+  static const String backIcon = "assets/svg/Back.svg";
+  static const String saveIcon = "assets/svg/save.svg";
+
 
 
 
