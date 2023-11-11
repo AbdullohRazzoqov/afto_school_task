@@ -10,13 +10,14 @@ class ChangePageEvent extends LoginEvent {
   });
 }
 
-class IsLoginEvent extends LoginEvent {
-  String email;
-  String password;
-  IsLoginEvent({
-    required this.email,
-    required this.password,
+class IsLoginEvent extends LoginEvent {}
+
+
+class ChangeInput extends LoginEvent {
+  String? email;
+  String? password;
+  ChangeInput({
+    this.email,
+    this.password,
   });
 }
-
-class IsRegisterEvent extends LoginEvent {}

@@ -10,10 +10,7 @@ class AppIcons {
   static const String seeOffIcon = "assets/svg/see off.svg";
   static const String backIcon = "assets/svg/Back.svg";
   static const String saveIcon = "assets/svg/save.svg";
-
-
-
-
-
-
+  static const String backSecoundIcon = "assets/svg/back_secunt.svg";
+  static const String nextSecoundIcon = "assets/svg/next_secunt.svg";
+  static const String lessonAppbarIcon = "assets/svg/lesson_appbar.svg";
 }

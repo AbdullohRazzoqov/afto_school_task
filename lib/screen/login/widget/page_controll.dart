@@ -3,15 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-
-
-
-
 // Login Newtwork Widgets
 class LoginNetworkWidgets extends StatelessWidget {
-   LoginNetworkWidgets({
-    super.key,required this.imaUrl
-  });
+  LoginNetworkWidgets({super.key, required this.imaUrl});
   String imaUrl;
 
   @override
@@ -31,14 +25,13 @@ class LoginNetworkWidgets extends StatelessWidget {
   }
 }
 
-
 // Mian button
 
-
 class MainButton extends StatelessWidget {
-  MainButton({super.key, required this.ontap, required this.text});
+  MainButton({super.key, required this.ontap, required this.text, required this.color});
   GestureTapCallback ontap;
-  String text;
+  Text text;
+  Color color;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -48,17 +41,11 @@ class MainButton extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 24.w),
         height: 50.h,
         decoration: BoxDecoration(
-          color: const Color(0xFFEAECF0),
+          color:color,
           borderRadius: BorderRadius.circular(32.r),
         ),
         child: Center(
-            child: Text(
-          text,
-          style: TextStyle(
-              fontSize: 16.sp,
-              fontWeight: FontWeight.w600,
-              color: Color(0xFF838FA0)),
-        )),
+            child: text),
       ),
     );
   }

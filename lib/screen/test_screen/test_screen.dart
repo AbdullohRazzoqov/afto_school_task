@@ -1,13 +1,14 @@
 import 'package:afto_school_task/core/utils/app_colors.dart';
 import 'package:afto_school_task/core/utils/app_icons.dart';
 import 'package:afto_school_task/data/fake_data.dart';
-import 'package:afto_school_task/screen/test/bloc/bloc/test_bloc.dart';
-import 'package:afto_school_task/screen/test/widgets/video_play.dart';
+import 'package:afto_school_task/screen/test_screen/widgets/video_play.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'bloc/bloc/test_bloc.dart';
 
 class TestScreen extends StatefulWidget {
   const TestScreen({super.key});
@@ -89,6 +90,8 @@ class _TestScreenState extends State<TestScreen> {
                             height: 174,
                             child:
                                 PlayVideo(videoUrl: state.question!.mediaUrl!),
+                      // PlayVideo(videoUrl: 'assets/vedio/no-po.mp4'),
+
                           ),
                     const SizedBox(
                       height: 16,
