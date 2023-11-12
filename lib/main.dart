@@ -1,10 +1,9 @@
 import 'package:afto_school_task/core/utils/app_colors.dart';
-import 'package:afto_school_task/screen/lesson/lesson.dart';
+import 'package:afto_school_task/screen/login/auth_screen.dart';
 import 'package:afto_school_task/screen/login/bloc/bloc/login_bloc.dart';
 import 'package:afto_school_task/screen/login/bloc/register_bloc/bloc/register_bloc.dart';
 import 'package:afto_school_task/screen/login/widget/input_widget.dart';
 import 'package:afto_school_task/screen/test_screen/bloc/bloc/test_bloc.dart';
-import 'package:afto_school_task/screen/test_screen/test_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -40,7 +39,7 @@ class MyApp extends StatelessWidget {
               ),
               useMaterial3: true,
             ),
-            home: TestScreen(),
+            home:const  AuthScreen(),
           ),
         ),
       ),

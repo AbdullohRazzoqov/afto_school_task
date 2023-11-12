@@ -23,4 +23,22 @@ class AppStyle {
           letterSpacing: -0.14,
         ),
       );
+
+  static TextStyle get quizeMainStyle => GoogleFonts.manrope(
+        textStyle: TextStyle(
+          fontSize: 16.sp,
+          fontWeight: FontWeight.w600,
+          color: const Color(0xFF27364E),
+          letterSpacing: -0.16,
+        ),
+      );
+
+  static TextStyle get authWelcome => GoogleFonts.manrope(
+        textStyle: TextStyle(
+          fontSize: 32.sp,
+          fontWeight: FontWeight.w700,
+          color: const Color(0xFF27364E),
+          letterSpacing: -0.32,
+        ),
+      );
 }

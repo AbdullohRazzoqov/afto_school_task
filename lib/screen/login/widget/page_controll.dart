@@ -1,12 +1,11 @@
-import 'package:afto_school_task/core/utils/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 // Login Newtwork Widgets
 class LoginNetworkWidgets extends StatelessWidget {
-  LoginNetworkWidgets({super.key, required this.imaUrl});
-  String imaUrl;
+  const LoginNetworkWidgets({super.key, required this.imaUrl});
+  final String imaUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,11 @@ class LoginNetworkWidgets extends StatelessWidget {
 // Mian button
 
 class MainButton extends StatelessWidget {
-  MainButton({super.key, required this.ontap, required this.text, required this.color});
+  MainButton(
+      {super.key,
+      required this.ontap,
+      required this.text,
+      required this.color});
   GestureTapCallback ontap;
   Text text;
   Color color;
@@ -41,11 +44,10 @@ class MainButton extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 24.w),
         height: 50.h,
         decoration: BoxDecoration(
-          color:color,
+          color: color,
           borderRadius: BorderRadius.circular(32.r),
         ),
-        child: Center(
-            child: text),
+        child: Center(child: text),
       ),
     );
   }

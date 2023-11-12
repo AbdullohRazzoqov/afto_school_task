@@ -1,5 +1,6 @@
 import 'package:afto_school_task/core/utils/app_colors.dart';
 import 'package:afto_school_task/core/utils/app_icons.dart';
+import 'package:afto_school_task/core/utils/text_style.dart';
 import 'package:afto_school_task/screen/lesson/lesson.dart';
 import 'package:afto_school_task/screen/login/bloc/bloc/login_bloc.dart';
 import 'package:afto_school_task/screen/login/bloc/register_bloc/bloc/register_bloc.dart';
@@ -150,19 +151,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               state.error!.passwordError
                           ? Text(
                               'At least 8 characters',
-                              style: TextStyle(
-                                  fontSize: 14.sp,
-                                  fontWeight: FontWeight.w400,
-                                  color: const Color(0xFFFF7253)),
+                              style: AppStyle.pageControllOff
+                                  .copyWith(color: const Color(0xFFFF7253)),
                             )
-                          : Text(
-                              'At least 8 characters',
-                              style: TextStyle(
-                                fontSize: 14.sp,
-                                fontWeight: FontWeight.w400,
-                                color: const Color(0xFF94D073),
-                              ),
-                            )
+                          : Text('At least 8 characters',
+                              style: AppStyle.pageControllOff
+                                  .copyWith(color: const Color(0xFF94D073)))
                 ],
               ),
               SizedBox(
@@ -185,10 +179,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         ),
                         Text(
                           'Or sign in with',
-                          style: TextStyle(
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w400,
-                              color: const Color(0xFF101828)),
+                          style: AppStyle.pageControllOff
+                              .copyWith(color: const Color(0xFF101828)),
                         ),
                         Container(
                           height: 1,

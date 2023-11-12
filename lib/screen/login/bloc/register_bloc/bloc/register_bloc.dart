@@ -51,7 +51,7 @@ class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
             emailError: emailError,
             passwordError: passwordError,
             rePassowrdError: rePasswordError,
-            nameError: emailError,
+            nameError: nameError,
           ),
         ));
       } else {
@@ -84,8 +84,8 @@ class RegisterBloc extends Bloc<RegisterEvent, RegisterState> {
     } else if (password != rePasswoord) {
       passwordError = false;
       rePasswordError = true;
-    }else{
-       passwordError = false;
+    } else {
+      passwordError = false;
       rePasswordError = false;
     }
   }

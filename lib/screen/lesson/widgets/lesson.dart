@@ -1,4 +1,5 @@
 import 'package:afto_school_task/core/utils/app_colors.dart';
+import 'package:afto_school_task/core/utils/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
@@ -54,16 +55,14 @@ class Lessons extends StatelessWidget {
                             fontWeight: FontWeight.w600,
                             color: const Color(0xFF777777)),
                       ),
-                      const Text(
+                      Text(
                         '01 Minutes',
-                        style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w400,
-                            color: Color(0xFF969696)),
+                        style: AppStyle.pageControllOff
+                            .copyWith(color: const Color(0xFF969696)),
                       ),
                     ],
                   ),
-                  Expanded(child: SizedBox()),
+                  const Expanded(child: SizedBox()),
                   Container(
                     padding: EdgeInsets.all(8),
                     height: 45,

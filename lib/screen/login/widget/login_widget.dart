@@ -1,5 +1,6 @@
 import 'package:afto_school_task/core/utils/app_colors.dart';
 import 'package:afto_school_task/core/utils/app_icons.dart';
+import 'package:afto_school_task/core/utils/text_style.dart';
 import 'package:afto_school_task/screen/lesson/lesson.dart';
 import 'package:afto_school_task/screen/login/bloc/bloc/login_bloc.dart';
 import 'package:afto_school_task/screen/login/widget/input_widget.dart';
@@ -65,14 +66,9 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Text(
-                    'Forgot Password?',
-                    style: TextStyle(
-                      fontSize: 14.sp,
-                      fontWeight: FontWeight.w400,
-                      color: const Color(0xFF94D073),
-                    ),
-                  ),
+                  Text('Forgot Password?',
+                      style: AppStyle.pageControllOff
+                          .copyWith(color: const Color(0xFF94D073))),
                   SizedBox(
                     width: 24.w,
                   )
@@ -96,14 +92,9 @@ class LoginScreen extends StatelessWidget {
                           width: 98,
                           color: const Color(0xFFD0D5DD),
                         ),
-                        Text(
-                          'Or sign in with',
-                          style: TextStyle(
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w400,
-                            color: const Color(0xFF101828),
-                          ),
-                        ),
+                        Text('Or sign in with',
+                            style: AppStyle.pageControllOff
+                                .copyWith(color: const Color(0xFF101828))),
                         Container(
                           height: 1,
                           width: 98,
@@ -114,7 +105,7 @@ class LoginScreen extends StatelessWidget {
                     SizedBox(
                       height: 32.h,
                     ),
-                    Row(
+               const      Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         LoginNetworkWidgets(imaUrl: AppIcons.googleIcon),

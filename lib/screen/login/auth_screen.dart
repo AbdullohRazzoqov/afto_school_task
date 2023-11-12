@@ -39,8 +39,9 @@ class _AuthScreenState extends State<AuthScreen> {
                 begin: Alignment.centerLeft,
                 end: Alignment.topCenter,
                 colors: <Color>[
-                  Color.fromARGB(255, 247, 242, 228),
-                  Color(0xFFC3E2A7),
+                  Color(0xFFDFDFD1),
+                  Color(0xFFF1F2D6),
+                  Color(0xFFC1E89B)
                 ],
                 tileMode: TileMode.mirror,
               ),
@@ -56,11 +57,7 @@ class _AuthScreenState extends State<AuthScreen> {
                         state.isRegister
                             ? AppText.registerWelcome
                             : AppText.loginWelcome,
-                        style: TextStyle(
-                          fontSize: 32.sp,
-                          fontWeight: FontWeight.w700,
-                          color: const Color(0xFF27364E),
-                        ),
+                        style: AppStyle.authWelcome,
                         textAlign: TextAlign.center,
                       ),
                       Padding(
@@ -69,10 +66,8 @@ class _AuthScreenState extends State<AuthScreen> {
                           state.isRegister
                               ? AppText.welcomeTitleR
                               : AppText.welcomeTitleL,
-                          style: TextStyle(
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w400,
-                              color: const Color(0xFF27364E)),
+                          style: AppStyle.pageControllOff
+                              .copyWith(color: const Color(0xFF27364E)),
                           textAlign: TextAlign.center,
                         ),
                       ),
